@@ -331,14 +331,19 @@ const SportJournalTimyr = ({ navigation, route }) => {
         //console.error(err);
       });
       return false;
-    } //else if (url.includes('revolut')) {
-    //Linking.openURL(url).catch(err => {
-    //  //console.error(err);
-    //});
-    //
-    //return false;
-    //}
-    else if (url.includes('rbcmobile://')) {
+    } else if (url.includes('be.kbc.mobile://start')) {
+      Linking.openURL(url).catch(err => {
+        //console.error(err);
+      });
+
+      return false;
+    } else if (url.includes('be.kbc.mbbpsd2paymentinitiation://start')) {
+      Linking.openURL(url).catch(err => {
+        //console.error(err);
+      });
+
+      return false;
+    } else if (url.includes('rbcmobile://')) {
       Linking.openURL(url).catch(err => {
         //console.error(err);
       });
